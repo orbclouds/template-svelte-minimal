@@ -1,0 +1,18 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "include": ["src", "node_modules", "src/**/*"],
+  "exclude": ["node_modules/*", "public/*"],
+  "compilerOptions": {
+    "types": ["node", "@types/snowpack-env"],
+    "paths": {
+      "@app/*": ["src/*"]
+    },
+    "baseUrl": ".",
+    "noEmit": true,
+    "strict": true,
+    "module": "esnext",
+    "isolatedModules": false,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+  }
+}
